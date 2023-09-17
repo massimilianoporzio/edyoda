@@ -1,4 +1,5 @@
 def mainMenu():
+    print("======================")
     print("Welcome to my restaurant")
     print("1. Admin section")
     print("2. User section")
