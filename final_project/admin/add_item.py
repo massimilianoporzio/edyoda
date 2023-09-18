@@ -7,7 +7,7 @@ from models.food_item import FoodItem
 
 def main():
     #read from existing file of food items (if exists, or open it for writing)
-    with open(os.path.join(os.path.dirname(__file__), "food_items.json"), "r+", encoding="utf-8") as file:
+    with open(os.path.join(os.path.dirname(__file__), "./data/food_items.json"), "r+", encoding="utf-8") as file:
         file.seek(0)
         try:
             data = json.load(file)

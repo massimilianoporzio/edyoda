@@ -28,7 +28,7 @@ def main():
         case 1:
             #reading from file admin users
             try:
-                f =  open(os.path.join(os.path.dirname(__file__), 'admin_users.json'),encoding="utf-8")
+                f =  open(os.path.join(os.path.dirname(__file__), './data/admin_users.json'),encoding="utf-8")
                 admin_users = json.load(f)['admin_users']
                 f.close()
                

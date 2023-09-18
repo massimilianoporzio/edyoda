@@ -5,8 +5,9 @@ from users import main as mainUsers
 from restaurant import main as mainMenu
 from models.user import User
 import phonenumbers
+#TODO add check if user press Q for quit and return to previous menu
 def main():
-     with open(os.path.join(os.path.dirname(__file__), "./../admin/registered_users.json"), "r+", encoding="utf-8") as file:
+     with open(os.path.join(os.path.dirname(__file__), "./../admin/data/registered_users.json"), "r+", encoding="utf-8") as file:
         file.seek(0)
         try:
             data = json.load(file)

@@ -6,7 +6,7 @@ from admin import admin_menu as mainAdmin
 from models.food_item import FoodItem
 from restaurant import main as mainMenu
 def main():
-    with open(os.path.join(os.path.dirname(__file__), "food_items.json"), "r+", encoding="utf-8") as file:
+    with open(os.path.join(os.path.dirname(__file__), "./data/food_items.json"), "r+", encoding="utf-8") as file:
         file.seek(0)
         try:
             data = json.load(file)

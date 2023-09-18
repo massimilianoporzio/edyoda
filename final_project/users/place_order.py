@@ -10,7 +10,7 @@ def myconverter(o):
         return o.__str__()
 
 def main(logged_user):
-     with open(os.path.join(os.path.dirname(__file__), "./../admin/orders.json"), "r+", encoding="utf-8") as file:
+     with open(os.path.join(os.path.dirname(__file__), "./../admin/data/orders.json"), "r+", encoding="utf-8") as file:
         file.seek(0)
         try:
             data = json.load(file)
