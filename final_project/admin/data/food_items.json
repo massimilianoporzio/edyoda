@@ -6,7 +6,7 @@
             "quantity": "4 pieces",
             "price": 240,
             "discount": 0.0,
-            "stock": 10
+            "stock": 9
         },
         {
             "FoodID": "698c8bae-a6a5-4362-b0de-2ef2b5099e86",
@@ -14,7 +14,7 @@
             "quantity": "1 Piece",
             "price": 320,
             "discount": 10.0,
-            "stock": 4
+            "stock": 3
         }
     ]
 }

@@ -66,6 +66,7 @@ def main():
             file.close()
         except:
             print("\u26D4 - Something went wrong")
+            file.close()
         else:
             print("\U00002714 Item edited successfully")
         

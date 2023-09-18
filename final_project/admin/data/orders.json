@@ -1,29 +1,24 @@
 {
-    "orders":[
+    "orders": [
         {
-            "userID":"85d18203-a073-4298-87ba-f3cbade404ed",
-            "food_items":[
+            "userID": "85d18203-a073-4298-87ba-f3cbade404ed",
+            "created_at": "2023-09-18 23:25:55.843236",
+            "orderID": "94046d8a-6890-4e4d-9a5b-6f604b562096",
+            "food_items": [
                 {
-                    
-                }
-            ]
-        },
-        {
-            "userID":"85d18203-a073-4298-87ba-f3cbade404ed",
-            "food_items":[
+                    "FoodID": "52a8f3b7-25a0-467e-a818-29739714a380",
+                    "name": "Tandoori Chicken",
+                    "quantity": "4 pieces",
+                    "price": 240
+                },
                 {
-                    
+                    "FoodID": "698c8bae-a6a5-4362-b0de-2ef2b5099e86",
+                    "name": "Vegan Burger",
+                    "quantity": "1 Piece",
+                    "price": 320
                 }
-            ]
-        },
-        {
-            "userID":"user1",
-            "food_items":[
-                {
-                    
-                }
-            ]
+            ],
+            "total": 528.0
         }
-        
     ]
 }

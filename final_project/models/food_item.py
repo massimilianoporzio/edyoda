@@ -15,6 +15,8 @@ class FoodItem:
 
     def __str__(self) -> str:
         return f"{self.name} ({self.quantity}) [INR {self.price}] - discount: {self.discount}% - Stock: {self.stock}"
+    def __repr__(self) -> str:
+        return f"{self.name} ({self.quantity}) [INR {self.price}]"
    
     @staticmethod
     def createFood():
