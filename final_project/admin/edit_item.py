@@ -13,9 +13,9 @@ def main():
         try:
             data = json.load(file)
         except Exception as ex:
-            data = {
-                "food_items":[]
-            }
+            print("\u26D4 - Something went wrong")
+            time.sleep(1.5)
+            mainAdmin.main()
         food_items = data["food_items"]
         
         os.system('cls')
