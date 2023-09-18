@@ -1,6 +1,6 @@
 import os
 from restaurant import main as mainMenu
-from admin import add_item
+from admin import add_item, edit_item
 
 def main():
     os.system('cls')
@@ -26,3 +26,6 @@ def main():
             mainMenu.mainMenu()
         case 1:
             add_item.main()
+        case 2:
+            edit_item.main()
+    
