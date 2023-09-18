@@ -6,7 +6,7 @@ from users import user_menu
 from models.user import User
 import maskpass
 def main():
-    with open(os.path.join(os.path.dirname(__file__), "registered_users.json"), "r+", encoding="utf-8") as file:
+    with open(os.path.join(os.path.dirname(__file__), "./../admin/registered_users.json"), "r+", encoding="utf-8") as file:
         file.seek(0)
         try:
             data = json.load(file)
