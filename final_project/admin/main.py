@@ -70,5 +70,6 @@ def main():
                 else:
                     break
             admin_menu.main()
+            return
             
             
