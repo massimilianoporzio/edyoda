@@ -158,6 +158,7 @@ class User:
             except:
                 print("Enter a password matching the stated criteria")
         new_user = User(
+            userID=user_to_update.userID,
             name=user_name,
             email=user_email,
             password=user_password,
