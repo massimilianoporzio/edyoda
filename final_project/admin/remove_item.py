@@ -49,9 +49,9 @@ def main():
         item_to_edit_index = food_items.index(item_to_edit)
         while True:
             user_input = input(f"are you sure you want to remove '{item_to_edit['name']}'?(Yes/No)")
-            if user_input=="yes" or user_input =='Y':
+            if user_input.lower()=="yes" or user_input.lower() =='y':
                 break
-            elif user_input == "no" or user_input == "N":
+            elif user_input.lower() == "no" or user_input.lower() == "n":
                 mainAdmin.main()
                 file.close()
                 return
