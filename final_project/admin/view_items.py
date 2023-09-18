@@ -22,10 +22,12 @@ def main():
         print("===== LIST OF FOOD ITEMS ===========")
         print("====================================")
         print("\n")
-        
-        for item in food_items:
-            print(f"{item['name']} ({item['quantity']}) [INR {item['price']}] - Discount (%): {item['discount']} - Stock: {item['stock']}")
+        if len(food_items)==0:
+            print("There are no items in the list")
+        else:
+            for item in food_items:
+                print(f"{item['name']} ({item['quantity']}) [INR {item['price']}] - Discount (%): {item['discount']} - Stock: {item['stock']}")
         print("\nPress ENTER to return to Admin Menu")
         input()
-        
+        file.close()
         mainAdmin.main()

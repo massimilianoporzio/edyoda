@@ -1,28 +1,3 @@
 {
-    "food_items": [
-        {
-            "FoodID": "631517c2-263d-4602-a2e9-372b54fb1e1a",
-            "name": "pollo",
-            "quantity": "2",
-            "price": 2,
-            "discount": 2.0,
-            "stock": 2
-        },
-        {
-            "FoodID": "bbbdaa8c-d6b8-4d50-9307-034c81d3e402",
-            "name": "pollo 2",
-            "quantity": "2",
-            "price": 2,
-            "discount": 2.0,
-            "stock": 2
-        },
-        {
-            "FoodID": "68a3016d-1db0-42f1-b4e7-bb0b2dd7b62b",
-            "name": "Riso alla cantonese",
-            "quantity": "20",
-            "price": 500,
-            "discount": 20.0,
-            "stock": 5
-        }
-    ]
+    "food_items": []
 }

@@ -16,6 +16,8 @@ def main():
             print("\u26D4 - Something went wrong")
             time.sleep(1.5)
             mainAdmin.main()
+            file.close()
+            return
         food_items = data["food_items"]
         
         os.system('cls')
@@ -31,6 +33,7 @@ def main():
             foodID = input("Please type the FoodID of the item you want to edit\n(you can copy and paste it from the above list): ")
             if foodID == "0":
                     mainMenu.mainMenu()
+                    file.close()
             item_to_edit = next((x for x in food_items if x['FoodID'] == foodID), None)
             if(item_to_edit):
                 
@@ -57,7 +60,7 @@ def main():
         food_items[item_to_edit_index]=item_dict
         data["food_items"]=food_items
         
-        file.seek(0)
+        file.truncate(0)
         try:
             json.dump(data,file,indent=4)
             file.close()
