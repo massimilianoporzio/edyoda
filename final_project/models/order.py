@@ -17,5 +17,12 @@ class Order:
         for item in self.food_items:
             result += repr(item)+"\n"
         return result
+    def __repr__(self) -> str:
+        result =f"created at: {datetime.datetime.strftime(self.created_at,'%d/%m/%Y %H:%M')}"
+        result +="\nItems in order:\n"
+        for item in self.food_items:
+            result += repr(item)+"\n"
+        result +f"\nTotal (INR): {self.total}"
+        return result
     
     

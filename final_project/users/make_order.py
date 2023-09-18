@@ -14,7 +14,7 @@ def main(logged_user):
         except:
             print("\u26D4 - Something went wrong")
             time.sleep(2)
-            mainMenu.main()
+            user_menu.main(logged_user=logged_user)
             foodFile.close()
             
             return

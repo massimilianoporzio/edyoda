@@ -5,7 +5,7 @@ from builtins import staticmethod
 
 
 class FoodItem:
-    def __init__(self,name,quantity,price,discount,stock,fooodID = str(uuid.uuid4())) -> None:
+    def __init__(self,name,quantity,price,discount=-1,stock=-1,fooodID = str(uuid.uuid4())) -> None:
         self.FoodID = fooodID
         self.name = name
         self.quantity = quantity

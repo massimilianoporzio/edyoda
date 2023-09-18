@@ -26,7 +26,7 @@ def main(logged_user, items_for_order):
         except Exception as ex:
             print("\u26D4 - Something went wrong")
             time.sleep(2)
-            mainMenu.main()
+            user_menu.main(logged_user=logged_user)
             file.close()
             return
         
@@ -58,7 +58,7 @@ def main(logged_user, items_for_order):
         )
         
         order_dict = vars(user_order)
-        print("ORDER_DICT: ",order_dict)
+        
         existing_orders.append(order_dict)
         #print(json.dumps(order_dict, default = myconverter)) 
         data["orders"]=existing_orders

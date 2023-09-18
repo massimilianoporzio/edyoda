@@ -25,3 +25,5 @@ def main(logged_user):
             mainMenu.mainMenu()
         case 1:
             make_order.main(logged_user=logged_user)
+        case 2:
+            orders_history.main(logged_user=logged_user)

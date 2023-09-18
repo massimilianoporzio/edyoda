@@ -19,6 +19,26 @@
                 }
             ],
             "total": 528.0
+        },
+        {
+            "userID": "85d18203-a073-4298-87ba-f3cbade404ed",
+            "created_at": "2023-09-19 00:05:29.985330",
+            "orderID": "bbf70d59-bba6-4b28-91f3-a732a514d970",
+            "food_items": [
+                {
+                    "FoodID": "698c8bae-a6a5-4362-b0de-2ef2b5099e86",
+                    "name": "Vegan Burger",
+                    "quantity": "1 Piece",
+                    "price": 320
+                },
+                {
+                    "FoodID": "17a8b879-14f0-4cf6-a36f-718be4f6f1f1",
+                    "name": "Truffle Cake",
+                    "quantity": "500g",
+                    "price": 900
+                }
+            ],
+            "total": 1098.0
         }
     ]
 }

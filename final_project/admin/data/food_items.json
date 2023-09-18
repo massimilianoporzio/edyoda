@@ -14,7 +14,15 @@
             "quantity": "1 Piece",
             "price": 320,
             "discount": 10.0,
-            "stock": 3
+            "stock": 2
+        },
+        {
+            "FoodID": "17a8b879-14f0-4cf6-a36f-718be4f6f1f1",
+            "name": "Truffle Cake",
+            "quantity": "500g",
+            "price": 900,
+            "discount": 10.0,
+            "stock": 29
         }
     ]
 }
