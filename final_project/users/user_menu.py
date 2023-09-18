@@ -1,7 +1,7 @@
 import os
 
 from restaurant import main as mainMenu
-from users import make_order,orders_history
+from users import make_order,orders_history,update_profile
 def main(logged_user):
     os.system('cls')
     while True:
@@ -27,3 +27,5 @@ def main(logged_user):
             make_order.main(logged_user=logged_user)
         case 2:
             orders_history.main(logged_user=logged_user)
+        case 3:
+            update_profile.main(logged_user=logged_user)

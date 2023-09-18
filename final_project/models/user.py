@@ -25,7 +25,7 @@ class User:
             return False
 
     def __str__(self) -> str:
-        return f"{self.name} - Email: {self.email} - Password: {self.password} - Phone: {phonenumbers.format_number(self.phone, phonenumbers.PhoneNumberFormat.INTERNATIONAL)} - Address: {self.address} - userID: {str(self.userID)}"
+        return f"{self.name} - Email: {self.email} - Password: {self.password} - Phone: {self.phone} - Address: {self.address} - userID: {str(self.userID)}"
     
     @staticmethod
     def createUser(existing_users):
@@ -91,4 +91,81 @@ class User:
 
         )
         return new_user
+
+    @staticmethod
+    def updateUser(existing_users,user_to_update):
+        while True:
+            user_name = input(f"Full Name: (current: {user_to_update.name}): ")
+            if user_name != "":
+               existing_name = next((x for x in existing_users if x['name'] == user_name), None)
+               if existing_name:
+                   print("A User with the same name already exists.")
+               else:
+                   break
+            else:
+                user_name = user_to_update.name
+                break
+
+        while True:
+            try:
+                current_phone = phonenumbers.parse(user_to_update.phone)
+                user_input = input(f"Phone number (current: {phonenumbers.format_number(current_phone, phonenumbers.PhoneNumberFormat.INTERNATIONAL)}): ")
+                if user_input=="":
+                    user_input = phonenumbers.format_number(current_phone, phonenumbers.PhoneNumberFormat.INTERNATIONAL)
+                user_phone =phonenumbers.parse(user_input) 
+                
+                if phonenumbers.is_valid_number(user_phone):
+                    break
+                else:
+                    raise Exception("Incorrect phone number")
+            except Exception as ex:
+                print("Enter a valid phone number (International Mobile: +XX xxx xxxxxxx)")
+        while True:
+            try:
+                user_email = input(f"Email (current: {user_to_update.email}): ")
+                if user_email == "":
+                    user_email = user_to_update.email
+                    break
+                if User.isValid(user_email):
+                    existing_email = next((x for x in existing_users if x['email'] == user_email), None)
+                    if existing_email:
+                        print("A User with the same email address already exsists.")
+                    else:
+                        break
+                else:
+                    raise Exception("Invalid email")
+            except:
+                print("Enter a valid email address")
+        
+        user_address = input(f"Address (current: {user_to_update.address}): ")
+        while True:
+            try:
+                print("Enter password matching alle the below criteria:\n")
+                print("1. Atleast one uppercase character")
+                print("2. Atleast one lowercase character")
+                print("3. Minimum 8 characters long")
+                print("4. Atleast one special symbol")
+                print("5. Atleast one digit.")
+                user_password = input(f"password (current: {user_to_update.password}): ")
+                if user_password =="":
+                    user_password = user_to_update.password
+                    break
+                find = re.match(pattern,user_password)
+                if find:
+                    break
+                else:
+                    raise Exception("Not valid password")
+            except:
+                print("Enter a password matching the stated criteria")
+        new_user = User(
+            name=user_name,
+            email=user_email,
+            password=user_password,
+            address=user_address,
+            phone=phonenumbers.format_number(user_phone,phonenumbers.PhoneNumberFormat.INTERNATIONAL)
+
+        )
+        return new_user
+    
+    
 

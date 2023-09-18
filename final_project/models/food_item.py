@@ -20,7 +20,13 @@ class FoodItem:
    
     @staticmethod
     def createFood():
-        food_name = input("Name: ")
+        while True:
+            food_name = input("Name: ")
+            if food_name == "":
+                print("Please, enter a non-empty string")
+            else:
+                break
+        
         food_quantity = input("Quantity: ")
         while True:
             try:
@@ -61,15 +67,15 @@ class FoodItem:
 
     @staticmethod
     def editFood(itemToEdit):
-        new_name = input(f"New Name (actual: {itemToEdit.name}): ")
+        new_name = input(f"New Name (current: {itemToEdit.name}): ")
         if new_name == "":
             new_name = itemToEdit.name
-        new_quantity = input(f"New Quantity  (actual: {itemToEdit.quantity}): ")
+        new_quantity = input(f"New Quantity  (current: {itemToEdit.quantity}): ")
         if new_quantity == "":
             new_quantity = itemToEdit.quantity
         while True:
             try:
-                user_input = input(f"New Price  (actual: INR {itemToEdit.price}): ")
+                user_input = input(f"New Price  (current: INR {itemToEdit.price}): ")
                 if user_input == "":
                     new_price = itemToEdit.price
                     break
@@ -84,7 +90,7 @@ class FoodItem:
         
         while True:
             try:
-                user_input = input(f"New Discout (actual: {itemToEdit.discount}%): ")
+                user_input = input(f"New Discout (current: {itemToEdit.discount}%): ")
                 if user_input == "":
                     new_discount = itemToEdit.discount
                     break
@@ -97,7 +103,7 @@ class FoodItem:
                 print("Enter a number between 0 and 100")
         while True:
             try:
-                user_input = input(f"Stock amount (actual: {itemToEdit.stock}): ")
+                user_input = input(f"Stock amount (current: {itemToEdit.stock}): ")
                 if user_input == "":
                     new_stock = itemToEdit.stock
                     break

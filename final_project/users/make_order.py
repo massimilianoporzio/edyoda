@@ -1,7 +1,6 @@
 import os
 import json
 import time
-from restaurant import main as mainMenu
 from users import user_menu,place_order
 from models.food_item import FoodItem
 
