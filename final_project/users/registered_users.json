@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "userID": "user1",
+            "name": "Christen Lloyd",
+            "phone": "+393492340035",
+            "email": "diam@protonmail.org",
+            "address": "604-1195 Duis St.",
+            "password": "pippo123"
+        },
+        {
+            "userID": "user2",
+            "name": "Murphy Barlow",
+            "phone": "+39 349 2340035",
+            "email": "dictum@google.couk",
+            "address": "1458 Taciti Road",
+            "password": "pippo123"
+        },
+        {
+            "userID": "85d18203-a073-4298-87ba-f3cbade404ed",
+            "name": "Massi",
+            "phone": "+39 349 2300 0000",
+            "email": "massi@massi.com",
+            "address": "Via Roma",
+            "password": "Ma$$ichiara07"
+        }
+    ]
+}

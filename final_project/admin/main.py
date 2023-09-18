@@ -3,7 +3,7 @@ from admin import admin_menu
 import json
 import os
 import time
-import sys
+import maskpass
 
 def main():
     os.system('cls')
@@ -24,6 +24,7 @@ def main():
     match choice:
         case 0:
             mainMenu.mainMenu()
+            return
         case 1:
             #reading from file admin users
             try:
@@ -57,7 +58,8 @@ def main():
                 print("\n========================")
                 print("\n======= LOGIN ==========")
                 print("\n========================")
-                password = input(f"password for user '{admin_user['username']}': ")
+                password = maskpass.askpass(prompt=f"password for user '{admin_user['username']}': ")
+                #input(f"password for user '{admin_user['username']}': ")
                 if password == "0":
                     mainMenu.mainMenu()
                 admin_password =  next((x for x in admin_users if x['password'] == password), None)

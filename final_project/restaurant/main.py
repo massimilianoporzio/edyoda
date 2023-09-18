@@ -25,8 +25,8 @@ def mainMenu():
             mainAdmin.main()
             #sys.exit()
         case 2:
-            from users import users
-            users.main()
+            from users import main as mainUsers
+            mainUsers.main()
 if __name__ == '__main__':
     mainMenu()
     
