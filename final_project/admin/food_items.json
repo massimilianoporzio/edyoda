@@ -1,3 +1,20 @@
 {
-    "food_items": []
+    "food_items": [
+        {
+            "FoodID": "52a8f3b7-25a0-467e-a818-29739714a380",
+            "name": "Tandoori Chicken",
+            "quantity": "4 pieces",
+            "price": 240,
+            "discount": 0.0,
+            "stock": 10
+        },
+        {
+            "FoodID": "698c8bae-a6a5-4362-b0de-2ef2b5099e86",
+            "name": "Vegan Burger",
+            "quantity": "1 Piece",
+            "price": 320,
+            "discount": 10.0,
+            "stock": 4
+        }
+    ]
 }

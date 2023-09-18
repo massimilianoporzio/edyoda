@@ -25,7 +25,7 @@ def main():
         item_dict = vars(item)
         food_items.append(item_dict)
         data["food_items"]=food_items
-        
+        file.seek(0)
         file.truncate(0)
         try:
             json.dump(data,file,indent=4)

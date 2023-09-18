@@ -3,6 +3,7 @@ import json
 import time
 from restaurant import main as mainMenu
 from users import user_menu
+from models.user import User
 import maskpass
 def main():
     with open(os.path.join(os.path.dirname(__file__), "registered_users.json"), "r+", encoding="utf-8") as file:
@@ -42,13 +43,23 @@ def main():
             password = maskpass.askpass(prompt=f"password for user '{existing_user['name']}': ")
             if password == "0":
                 mainMenu.mainMenu()
-            matching_password =  next((x for x in existing_user if x['password'] == password), None)
+            matching_password =  next((x for x in existing_users if x['password'] == password), None)
             if not matching_password:
                 print("==========================================")
                 print("\u26D4 Wrong password - please try again or press 0 for Main Menu")
                 time.sleep(1)
             else:
                 break
-            user_menu.main()
-            return
+        loggedUser = User(
+            userID=existing_user["userID"],
+            address=existing_user["address"],
+            email=existing_user["email"],
+            password=existing_user["password"],
+            name=existing_user["name"],
+            phone=existing_user["phone"]
+
+        )
+
+        user_menu.main(loggedUser)
+        return
     

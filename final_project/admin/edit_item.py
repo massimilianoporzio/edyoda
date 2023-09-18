@@ -59,7 +59,7 @@ def main():
         item_dict = vars(foodItem)
         food_items[item_to_edit_index]=item_dict
         data["food_items"]=food_items
-        
+        file.seek(0)
         file.truncate(0)
         try:
             json.dump(data,file,indent=4)

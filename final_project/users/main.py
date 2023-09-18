@@ -1,5 +1,5 @@
 from restaurant import main as mainMenu
-from users import register_user
+from users import register_user,login_user
 import json
 import os
 import time
@@ -28,4 +28,7 @@ def main():
             return
         case 1:
             register_user.main()
+            return
+        case 2:
+            login_user.main()
             return
