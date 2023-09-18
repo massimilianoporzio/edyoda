@@ -1,0 +1,20 @@
+{
+    "food_items": [
+        {
+            "FoodID": "631517c2-263d-4602-a2e9-372b54fb1e1a",
+            "name": "pollo",
+            "quantity": "2",
+            "price": 2,
+            "discount": 2.0,
+            "stock": 2
+        },
+        {
+            "FoodID": "08416473-2620-4eb7-bbff-0afc41a7921b",
+            "name": "pollo 2",
+            "quantity": "2",
+            "price": 2,
+            "discount": 2.0,
+            "stock": 2
+        }
+    ]
+}

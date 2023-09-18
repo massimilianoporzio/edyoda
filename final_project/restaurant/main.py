@@ -21,8 +21,8 @@ def mainMenu():
             print('Enter 1 for admin section, 2 for users section')
     match choice:
         case 1:
-            from admin import admin
-            admin.main()
+            from admin import main as mainAdmin
+            mainAdmin.main()
             #sys.exit()
         case 2:
             from users import users
