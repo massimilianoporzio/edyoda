@@ -1,13 +1,19 @@
+import os
+import sys
 def mainMenu():
-    print("======================")
+    os.system('cls')
+    print("\n======================")
     print("Welcome to my restaurant")
     print("1. Admin section")
     print("2. User section")
+    print("0. QUIT")
     print("======================")
     while True:
         try:
             choice = int(input("Please make a choice\n"))
-            if choice > 0 and choice < 3:
+            if choice >= 0 and choice < 3:
+                if choice == 0:
+                    sys.exit()
                 break
             else:
                 raise Exception("error in parsing")
