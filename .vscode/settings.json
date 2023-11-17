@@ -2,5 +2,20 @@
     "nuxt.isNuxtApp": false,
     "python.analysis.extraPaths": [
         "./final_project/admin"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "edyoda_1",
+            "database": "assignment1",
+            "username": "root"
+        }
     ]
 }
