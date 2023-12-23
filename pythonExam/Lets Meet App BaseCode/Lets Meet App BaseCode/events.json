@@ -1,0 +1,73 @@
+[
+    {
+        "ID": "TME",
+        "Name": "Haven",
+        "Organizer": "Admin Skye",
+        "Start Date": "2022-01-25",
+        "Start Time": "10:40:00",
+        "End Date": "2022-01-25",
+        "End Time": "14:40:00",
+        "Users Registered": [
+            "Brimstone Sharma",
+            "Massimiliano"
+        ],
+        "Capacity": 50,
+        "Seats Available": 48
+    },
+    {
+        "ID": "YXE",
+        "Name": "Ascent",
+        "Organizer": "Admin Skye",
+        "Start Date": "2021-12-19",
+        "Start Time": "15:00:00",
+        "End Date": "2021-12-19",
+        "End Time": "15:50:00",
+        "Users Registered": [
+            "Brimstone Sharma",
+            "Omen Kumar",
+            "Massimiliano"
+        ],
+        "Capacity": 10,
+        "Seats Available": 7
+    },
+    {
+        "ID": "AW4",
+        "Name": "IceBox",
+        "Organizer": "Admin Cypher",
+        "Start Date": "2022-02-10",
+        "Start Time": "12:50:00",
+        "End Date": "2022-02-10",
+        "End Time": "13:40:00",
+        "Users Registered": [
+            "Massimiliano"
+        ],
+        "Capacity": 100,
+        "Seats Available": 98
+    },
+    {
+        "ID": "G6F",
+        "Name": "Ongoing Event",
+        "Organizer": "admin",
+        "Start Date": "2023-01-18",
+        "Start Time": "23:30:00",
+        "End Date": "2023-12-24",
+        "End Time": "23:59:59",
+        "Users Registered": [],
+        "Capacity": 75,
+        "Seats Available": 75
+    },
+    {
+        "ID": "RBJ",
+        "Name": "Upcoming Event",
+        "Organizer": "admin",
+        "Start Date": "2023-12-25",
+        "Start Time": "00:00:00",
+        "End Date": "2023-12-25",
+        "End Time": "23:59:59",
+        "Users Registered": [
+            "Massimiliano"
+        ],
+        "Capacity": 1000,
+        "Seats Available": 999
+    }
+]
